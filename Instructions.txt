@@ -1,0 +1,13 @@
+This assignment uses Inheritance and Interfaces.
+
+You must use my class Animal and my AssignmentTwo.java
+
+You do not need Javadocs
+
+You need to submit Cat, Dog, Storable and Talkable.
+
+Cat and Dog are subclasses of Animal.
+
+Storable and Talkable are Interfaces.
+
+We will discuss details in lecture.
