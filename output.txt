@@ -1,0 +1,28 @@
+Before Sort
+(Fluffy,150), color = pink
+(Sweety,200), color = yellow
+(Duke,10), weight = 500.0
+(Jason,5), weight = 100.0
+
+After Sort
+(Sweety,200), color = yellow
+(Fluffy,150), color = pink
+(Jason,5), weight = 100.0
+(Duke,10), weight = 500.0
+
+
+Animal (Sweety,200), color = yellow is a Kitty speaks by meowing
+(Sweety,200), color = yellow being stored in first class
+(Sweety,200), color = yellow being loaded into wooden box
+
+Animal (Fluffy,150), color = pink is a Kitty speaks by meowing
+(Fluffy,150), color = pink being stored in first class
+(Fluffy,150), color = pink being loaded into wooden box
+
+Animal (Jason,5), weight = 100.0 is a Doggie speaks by barking
+(Jason,5), weight = 100.0 being stored in coach
+(Jason,5), weight = 100.0 being loaded from kennel
+
+Animal (Duke,10), weight = 500.0 is a Doggie speaks by barking
+(Duke,10), weight = 500.0 being stored in coach
+(Duke,10), weight = 500.0 being loaded from kennel
