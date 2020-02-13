@@ -27,5 +27,4 @@ public abstract class Animal implements Comparable, Talkable, Storable
 
     private String name;
     private int orderingKey;
-    
 }

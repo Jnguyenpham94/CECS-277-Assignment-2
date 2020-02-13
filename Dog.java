@@ -1,3 +1,6 @@
+//Assignment 2
+//Kenny Ta 015020302
+//Jonathan Nguyen-Pham, 016297682 
 public class Dog extends Animal
 {
     public Dog(){
