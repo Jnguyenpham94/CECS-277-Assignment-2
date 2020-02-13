@@ -16,24 +16,39 @@ public class Dog extends Animal
 
 public Dog(String name, int orderingKey, double weight)
 {
-    super(name,orderingKey); //mimic this for cat too 
-    weight = this.weight;
+    super(name, orderingKey); //mimic this for cat too 
+    this.weight = weight;
 
 }
-    @Override
-    public int compareTo(Object o) {
-        // TODO Auto-generated method stub
-        return 0;
+   
+@Override
+public int compareTo(Object d) {
+    if(!(d instanceof Dog))
+    {
+        return 1;
     }
+    else
+    {
+        Dog otherDog = (Dog)d;
+        int key1 =this.getOrderingKey();
+        int key2 =otherDog.getOrderingKey();
+        
+       if(key1<key2)
+       {
+           return -1;
+       }
+       else if(key1==key2)
+       {
+           return 0;
+       }
+       else
+       {
+           return 1;
+       } 
+    }
+    
+}
 
-    public String store()
-    {
-        return "";
-    }
-    public String load()
-    {
-        return "";
-    }
     @Override
     public String speaksBy()
     {
@@ -43,7 +58,7 @@ public Dog(String name, int orderingKey, double weight)
 @Override
     public String toString()
     {
-return super.toString() + "weight = " + getWeight(); 
+        return super.toString() + "weight = " + getWeight() +" "; 
     }
     public double getWeight()
     {
@@ -55,6 +70,16 @@ return super.toString() + "weight = " + getWeight();
     @Override
     public String getType() {
         return "Doggie";
+    }
+    @Override
+    public void store()
+    {
+        System.out.println(toString() + "being stored in coach");
+     }
+     @Override
+    public void load()
+    {
+        System.out.println(toString() + "being loaded from kennel");
     }
 
 

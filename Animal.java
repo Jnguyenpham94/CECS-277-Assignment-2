@@ -1,10 +1,14 @@
 public abstract class Animal implements Comparable, Talkable, Storable
 { 
     public Animal(String name, int orderingKey) {
-        name = this.name;
-        orderingKey = this.orderingKey;
+        
+        this.name = name; 
+        this.orderingKey = orderingKey;
+
 	}
     public abstract String getType();
+    public abstract void store();
+    public abstract void load();
     
     public String getName()
     {
@@ -15,6 +19,12 @@ public abstract class Animal implements Comparable, Talkable, Storable
     {
         return getName(); 
     }
+
+    public int getOrderingKey()
+    {
+        return orderingKey;
+    }
+
     private String name;
     private int orderingKey;
     

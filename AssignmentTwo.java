@@ -25,7 +25,7 @@ public class AssignmentTwo {
 		
 		for(Animal animal : animals)
 		{
-			System.out.println("\nAnimal " + animal + " is a " + animal.getType() + " speaks by " + animal.speaksBy());
+			System.out.println("\nAnimal " + animal + "is a " + animal.getType() + " speaks by " + animal.speaksBy());
 			animal.store();
 			animal.load();
 		}
