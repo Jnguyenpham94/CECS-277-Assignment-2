@@ -34,9 +34,20 @@ public Dog(String name, int orderingKey, double weight)
     {
         return "";
     }
+    @Override
     public String speaksBy()
     {
-        return ""; 
+        return "barking"; 
+    }
+
+@Override
+    public String toString()
+    {
+return super.toString() + "weight = " + getWeight(); 
+    }
+    public double getWeight()
+    {
+        return weight;
     }
 
     private double weight;

@@ -33,15 +33,23 @@ public class Cat extends Animal
     {
         return "";
     }
+    
+    @Override
     public String speaksBy()
     {
-        return ""; 
+        return "meowing"; 
     }
 
     @Override
     public String getType() {
         // TODO Auto-generated method stub
         return "Kitty";
+    }
+
+    @Override
+    public String toString()
+    {
+        return ""; 
     }
 
     private String color;
