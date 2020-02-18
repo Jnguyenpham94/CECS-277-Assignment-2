@@ -5,7 +5,7 @@ public class Cat extends Animal
 {
     public Cat()
     {
-        this("Fluffy");
+        this("Fluffy"); // defaults
     }
     public Cat(String name)
     {
@@ -23,7 +23,7 @@ public class Cat extends Animal
 
 
     @Override
-    public int compareTo(Object c) {
+    public int compareTo(Animal c) {
         if(!(c instanceof Cat))
         {
             return 1;
@@ -85,5 +85,6 @@ public class Cat extends Animal
     {
         return super.getOrderingKey();
     }
+
     private String color;
 }

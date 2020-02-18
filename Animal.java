@@ -1,4 +1,4 @@
-public abstract class Animal implements Comparable, Talkable, Storable
+public abstract class Animal implements Comparable<Animal>, Talkable, Storable
 { 
     public Animal(String name, int orderingKey) {
         
@@ -7,8 +7,6 @@ public abstract class Animal implements Comparable, Talkable, Storable
 
 	}
     public abstract String getType();
-    public abstract void store();
-    public abstract void load();
     
     public String getName()
     {

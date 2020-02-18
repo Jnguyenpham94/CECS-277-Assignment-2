@@ -19,13 +19,13 @@ public class Dog extends Animal
 
 public Dog(String name, int orderingKey, double weight)
 {
-    super(name, orderingKey); //mimic this for cat too 
+    super(name, orderingKey); 
     this.weight = weight;
 
 }
    
 @Override
-public int compareTo(Object d) {
+public int compareTo(Animal d) {
     if(!(d instanceof Dog))
     {
         return 1;
@@ -74,16 +74,17 @@ public int compareTo(Object d) {
     public String getType() {
         return "Doggie";
     }
+
     @Override
     public void store()
     {
         System.out.println(toString() + "being stored in coach");
-     }
+    }
+
      @Override
     public void load()
     {
         System.out.println(toString() + "being loaded from kennel");
     }
-
 
 }
